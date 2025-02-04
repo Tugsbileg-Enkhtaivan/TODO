@@ -1,7 +1,12 @@
+'use client'
 import Image from "next/image";
 import styles from "./page.module.css";
 import Title from "../components/title/index.js";
 import Input from "../components/input/index.js";
+import Tab from "@/components/Tabs";
+import TaskList from "@/components/TaskList ";
+import TaskContainer from "@/components/taskContainer";
+import { useState } from "react";
 
 
 // Title 
@@ -10,10 +15,14 @@ import Input from "../components/input/index.js";
 // TaskList -> Task -> Button
 // Footer 
 export default function Home() {
+  const [tasks, setTasks] = useState([]);
+
+
   return (
     <div className={styles.page}>
       <Title />
-      <Input />
+      <Input tasks={tasks} setTasks={setTasks}/>
+      <TaskContainer tasks={tasks}/>
     </div>
   );
 }

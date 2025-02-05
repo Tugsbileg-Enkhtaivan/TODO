@@ -1,0 +1,32 @@
+.tabsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    width: 345px;
+    height: 32px;
+}
+
+.btn {
+    border-radius: 6px;
+    background-color: #F3F4F6;
+    color: #363636;
+    padding: 10px 12px;
+    gap: 10px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #a5edff;
+}
+
+.btn:active {
+    background-color: #3C82F6;
+    color: white;
+}

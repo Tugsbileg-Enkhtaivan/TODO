@@ -19,7 +19,7 @@ export default function Home() {
 
 
   return (
-    <div className={styles.page}>
+    <div className={styles.container}>
       <Title />
       <Input tasks={tasks} setTasks={setTasks}/>
       <TaskContainer tasks={tasks}/>

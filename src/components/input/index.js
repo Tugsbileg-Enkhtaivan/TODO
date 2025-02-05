@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./index.module.css"
 
 const Input = (props) => {
     const [inputValue , setInputValue] = useState('');
@@ -17,9 +18,9 @@ const Input = (props) => {
     }
 
     return (
-        <div>
-            <input placeholder="Add new task..."  onChange={onChange}/>
-            <button onClick={onSubmit}>Add</button>
+        <div className={styles.inputContainer}>
+            <input className={styles.input} placeholder="Add new task..."  onChange={onChange}/>
+            <button className={styles.btn} onClick={onSubmit}>Add</button>
         </div>
     )
 }

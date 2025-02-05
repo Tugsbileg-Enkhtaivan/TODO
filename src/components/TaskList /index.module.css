@@ -1,0 +1,23 @@
+.noTask {
+    margin: 30px 5px;
+    text-align: center;
+    color: #6B7280;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+}
+
+.newtaskContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 62px;
+    width: 345px;
+    padding: 16px;
+    border-radius: var(--radiusrounded-md);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+}

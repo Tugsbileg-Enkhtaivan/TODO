@@ -1,11 +1,15 @@
+import styles from "./index.module.css"
+
 const Tab = (props) => {
   const TABS = ["All", "Active", "Completed"];
 
   return (
-    <div>
+    <div className={styles.tabsContainer}>
         {TABS.map(tab =>{
             return (
-                <div>{tab}</div>
+                <div >
+                    <button className={styles.btn}>{tab}</button>
+                </div>
             )
         })}
     </div>
